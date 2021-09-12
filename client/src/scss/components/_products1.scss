@@ -1,0 +1,36 @@
+.products1 {
+  font-family: Red Hat Text, sans-serif;
+  width: 100%;
+  background-image: url('@assets/back_product_1.png');
+  background-repeat: no-repeat;
+  background-position: top;
+
+  h3 {
+    font-size: 80px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
+  }
+
+  &__items-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  &__item {
+    width: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-bottom: 100px;
+
+    span {
+      padding-top: 15px;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+}
