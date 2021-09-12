@@ -1,0 +1,53 @@
+.partnership {
+  &__form {
+    font-family: Red Hat Text, sans-serif;
+    background: rgba(196, 196, 196, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 122px 0;
+    &-one {
+      font-size: 36px;
+    }
+
+    &-two {
+      font-size: 48px;
+    }
+  }
+
+  &__input-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__input {
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-bottom: 5px solid #cc2936;
+    margin: 5px 0 50px;
+    width: 500px;
+    height: 60px;
+    transition: 0.1s linear;
+
+    &-header {
+      font-size: 24px;
+    }
+  }
+
+  &__send-button {
+    width: 360px;
+    height: 50px;
+    background-color: #cc2936;
+    color: white;
+    font-size: 22px;
+  }
+}

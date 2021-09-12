@@ -1,0 +1,200 @@
+.admin__login-form {
+  width: 100%;
+  height: 100%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #112b66;
+
+    span {
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 25px;
+    }
+
+    input {
+      margin: 10px 0;
+      padding: 8px;
+      width: 100%;
+      max-width: 250px;
+      border-radius: 5px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      border: 1px solid transparent;
+
+      &:focus {
+        border: 1px solid #cc2936;
+      }
+    }
+
+    button {
+      border-radius: 5px;
+      padding: 7px;
+      width: 70%;
+      max-width: 200px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      border: 1px solid transparent;
+
+      &:hover {
+        background-color: #112b66;
+        border: 1px solid #cc2936;
+        color: white;
+        box-shadow: 0 0 5px #cc2936;
+      }
+    }
+  }
+}
+
+.admin {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.admin__aside {
+  position: fixed;
+  width: 80px;
+  height: 100%;
+  left: 0;
+  background-color: #112b66;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  color: white;
+  padding: 20px 0;
+
+  a {
+    width: 80%;
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .admin__navs {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+
+    &:hover {
+      background-color: white;
+      color: #cc2936;
+    }
+  }
+
+  .admin__navs_active {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+    background-color: white;
+    color: #cc2936;
+  }
+
+  button {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 7px 0;
+
+    &:hover {
+      background-color: white;
+      color: #cc2936;
+    }
+  }
+}
+
+.text-column {
+  width: 400px;
+}
+
+.admin__delete-all-applications-btn {
+  background: #cc2936;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+}
+
+.admin__body {
+  flex: 1 1 auto;
+  background-color: #f2f2f2;
+  padding-left: 80px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  .admin__applications-table {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    border-spacing: 0;
+
+    thead {
+      tr {
+        height: 70px;
+      }
+    }
+
+    .application-row-wrapper {
+      .application-row__delete-button {
+        background-color: #cc2936;
+        color: white;
+        padding: 7px;
+        border-radius: 5px;
+      }
+
+      .application-row__done-button {
+        width: 30px;
+        height: 30px;
+        border: 3px solid #112b66;
+        cursor: pointer;
+      }
+
+      td {
+        padding: 20px 0;
+      }
+
+      &:hover {
+        box-shadow: 0 0 2px black;
+      }
+
+      button {
+        background: transparent;
+      }
+    }
+
+    .processed {
+      background: #1a1a1a;
+      color: #cccccc;
+    }
+  }
+
+  .admin__tables {
+    width: 100%;
+  }
+}
+
+.admin__controller {
+  padding: 10px;
+}

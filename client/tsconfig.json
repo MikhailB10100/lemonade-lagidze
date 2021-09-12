@@ -22,8 +22,10 @@
     "baseUrl": "./src",
     "paths": {
       "@/*": ["./*"],
+      "@api/*": ["api/*"],
       "@assets/*": ["assets/*"],
       "@components/*": ["components/*"],
+      "@http/*": ["http/*"],
       "@pages/*": ["pages/*"],
       "@styles/*": ["scss/*"],
     },
