@@ -1,1 +1,1 @@
-# template_react-webpack-babel
+# lemonade-lagidze
