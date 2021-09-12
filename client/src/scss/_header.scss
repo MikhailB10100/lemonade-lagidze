@@ -1,0 +1,55 @@
+.header {
+  height: 120px;
+  background-color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+
+  &__logo {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    &-name {
+      padding-left: 20px;
+      font-family: Red Hat Text, sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      padding: 30px;
+      font-family: Red Hat Text, sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      cursor: pointer;
+      user-select: none;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  &__phone-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone-number {
+    font-family: Red Hat Text, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+}
