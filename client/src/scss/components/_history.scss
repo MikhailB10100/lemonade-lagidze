@@ -1,0 +1,33 @@
+.history {
+  &-block {
+    font-family: Red Hat Text, sans-serif;
+    display: flex;
+    margin-bottom: 35px;
+    justify-content: center;
+
+    &__circle {
+      align-items: center;
+      background: black;
+      border-radius: 50%;
+      display: flex;
+      height: 208px;
+      justify-content: center;
+      width: 208px;
+      margin-right: 62px;
+    }
+
+    &__year {
+      color: white;
+      font-size: 40px;
+    }
+
+    &__text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 62.5%;
+      word-break: break-word;
+      font-size: 20px;
+    }
+  }
+}
