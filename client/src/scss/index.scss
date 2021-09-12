@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap');
 
-@import '@styles/core/_base';
-@import '@styles/core/_mixins';
-@import '@styles/core/_fonts';
-@import '@styles/core/_variables';
-@import '@styles/core/_reset';
+@import '~@styles/core/_base';
+@import '~@styles/core/_mixins';
+@import '~@styles/core/_fonts';
+@import '~@styles/core/_variables';
+@import '~@styles/core/_reset';
 
-@import '@styles/pages/_home';
-@import '@styles/_header';
+@import '~@styles/pages/_home';
+@import '~@styles/components/_header';

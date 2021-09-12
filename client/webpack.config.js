@@ -9,19 +9,6 @@ const isDev = !isProd
 
 const filename = ext => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`
 
-const jsLoaders = () => {
-  const loaders = [
-    {
-      loader: 'babel-loader',
-      options: {
-        presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript'],
-        plugins: ['@babel/plugin-proposal-class-properties']
-      }
-    }
-  ]
-  return loaders
-}
-
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
@@ -35,7 +22,9 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
     alias: {
       '@': path.resolve(__dirname, 'src'),
+      '@assets': path.resolve(__dirname, 'src/assets'),
       '@components': path.resolve(__dirname, 'src/components'),
+      '@pages': path.resolve(__dirname, 'src/pages'),
       '@styles': path.resolve(__dirname, 'src/scss'),
     }
   },
@@ -81,7 +70,15 @@ module.exports = {
       {
         test: /\.(m?js|tsx?)$/,
         exclude: /node_modules/,
-        use: jsLoaders()
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript'],
+              plugins: ['@babel/plugin-proposal-class-properties']
+            }
+          }
+        ]
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
