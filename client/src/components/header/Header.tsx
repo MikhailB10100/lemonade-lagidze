@@ -1,11 +1,10 @@
-import React from 'react';
-import Logo from '../../assets/Logo.png'
+import React from 'react'
+import Logo from '../header/Logo'
 
 function Header() {
-  return (<div>
-        <header><Logo/></header>
-      </div>
-  );
+  return (
+     <header ><Logo /></header>
+  )
 }
 
-export default Header;
+export default Header
