@@ -3,9 +3,9 @@ import logo from '../../assets/logo.png'
 
 const Logo = () => {
   return (
-      <div>
+      <div className='header__logo'>
         <img src={logo} alt="logo"/>
-        <span>Лагидзе</span>
+        <span className='header__logo-name'>Лагидзе</span>
       </div>
   );
 };
