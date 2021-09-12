@@ -1,9 +1,10 @@
 import React from 'react'
-
-// This is just an example of component
+import Header from '../header/Header'
 
 function Home() {
-  return <h1 className='home'>Hello, World!</h1>
+  return <div>
+    <Header/>
+  </div>
 }
 
 export default Home
