@@ -1,0 +1,38 @@
+.login-form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__input {
+    border: 1px solid black;
+    margin: 20px 0;
+    padding: 15px 5px;
+    font-size: 16px;
+  }
+
+  &__login-button {
+    background: black;
+    color: white;
+    width: 100px;
+    padding: 5px 2px;
+    border: 1px solid transparent;
+    font-size: 18px;
+    transition: 0.3s;
+
+    &:hover {
+      border: 1px solid black;
+      color: black;
+      background: white;
+    }
+  }
+}

@@ -3,7 +3,7 @@ import InputBlock from '@components/partnership/InputBlock'
 import { InputBlockProps } from '@components/partnership/interfaces'
 import UserService from '@api/user-service'
 
-function PartnershipOne() {
+const PartnershipOne = React.forwardRef((props, ref) => {
   const [name, setName] = useState<string>('')
   const [phone, setPhone] = useState<string>('')
   const [text, setText] = useState<string>('')
@@ -36,7 +36,7 @@ function PartnershipOne() {
   }
 
   return (
-    <div className="partnership">
+    <div className="partnership" ref={ref}>
       <form className="partnership__form" onSubmit={submitHandler}>
         <header className="partnership__header">
           <p className="partnership__header-one">Стань частью истории</p>
@@ -60,6 +60,6 @@ function PartnershipOne() {
       </form>
     </div>
   )
-}
+})
 
 export default PartnershipOne

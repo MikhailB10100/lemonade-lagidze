@@ -3,12 +3,12 @@ import Logo from '../header/Logo'
 import Navigation from './Navigation'
 import Phone from '../../assets/Phone.svg'
 
-function Header() {
+function Header({ refs }) {
   return (
-    <header className='header'>
+    <header className="header">
       <Logo />
-      <Navigation />
-      <div className='header__phone-wrapper'>
+      <Navigation refs={refs} />
+      <div className="header__phone-wrapper">
         <svg
           width="10"
           height="23"
@@ -24,7 +24,7 @@ function Header() {
             strokeLinejoin="round"
           />
         </svg>
-        <a className='header__phone-number'>+7 (981) 809-14-93 </a>
+        <a className="header__phone-number">+7 (981) 809-14-93 </a>
       </div>
     </header>
   )

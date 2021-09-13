@@ -1,24 +1,16 @@
 import React from 'react'
+import NavItem from '@components/header/NavItem'
 
-const Navigation = () => {
+const Navigation = ({ refs }) => {
+  const { home, history, production, partnership, aboutUs } = refs
   return (
-    <div className="header__navigation">
-      <nav className="header__navigation-item">
-        <a>Главная</a>
-      </nav>
-      <nav className="header__navigation-item">
-        <a>История</a>
-      </nav>
-      <nav className="header__navigation-item">
-        <a>Продукция</a>
-      </nav>
-      <nav className="header__navigation-item">
-        <a>Партнерство</a>
-      </nav>
-      <nav className="header__navigation-item">
-        <a>Мы</a>
-      </nav>
-    </div>
+    <nav className="header__navigation">
+      <NavItem text={'Главная'} refTo={home} />
+      <NavItem text={'История'} refTo={history} />
+      <NavItem text={'Продукция'} refTo={production} />
+      <NavItem text={'Партнерство'} refTo={partnership} />
+      <NavItem text={'Мы'} refTo={aboutUs} />
+    </nav>
   )
 }
 

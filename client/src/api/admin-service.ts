@@ -1,8 +1,8 @@
 import $api from '@http/index'
 
 export default class AdminService {
-  static async login(email: string, password: string) {
-    return $api.post('/auth/login', { email, password })
+  static async login(username: string, password: string) {
+    return $api.post('/auth/login', { username, password })
   }
 
   static async logout() {
@@ -23,5 +23,10 @@ export default class AdminService {
 
   static async deleteAllApplications() {
     return $api.delete('/application/delete-all-applications')
+  }
+
+  static async checkAuth() {
+    const token = localStorage.getItem('token')
+    return $api.post('/auth/refresh', { token })
   }
 }

@@ -12,9 +12,9 @@ import {
 
 import back_product_1 from '@assets/back_product_1.png'
 
-function Products1() {
+const Products1 = React.forwardRef((props, ref) => {
   return (
-    <div className="products1">
+    <div className="products1" ref={ref}>
       <img className="products1__background" src={back_product_1} />
       <h3>ПРЕИМУЩЕСТВА</h3>
       <div className="products1__items-wrapper">
@@ -58,6 +58,6 @@ function Products1() {
       </div>
     </div>
   )
-}
+})
 
 export default Products1

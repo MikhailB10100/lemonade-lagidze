@@ -14,10 +14,10 @@ class AdminController {
 
   async logout(req, res, next) {
     try {
-      const { refreshToken } = req.cookies
-      const token = await UserService.logout(refreshToken)
-      res.clearCookie('refreshToken')
-      return res.json(token)
+      const { authorization } = req.headers
+      const token = authorization.split(' ')[1]
+      const result = await UserService.logout(token)
+      return res.json(result)
     } catch (e) {
       next(e)
     }
@@ -59,6 +59,26 @@ class AdminController {
         status
       )
       return res.json(application)
+    } catch (e) {
+      next(e)
+    }
+  }
+
+  async registration(req, res, next) {
+    try {
+      const { username, password } = req.body
+      const user = await UserService.registration(username, password)
+      return res.json(user)
+    } catch (e) {
+      next(e)
+    }
+  }
+
+  async checkToken(req, res, next) {
+    try {
+      const { token } = req.body
+      const user = await UserService.checkToken(token)
+      return res.json(user)
     } catch (e) {
       next(e)
     }

@@ -1,9 +1,9 @@
 import React from 'react'
 import main_background from '@assets/main_background.png'
 
-function Main() {
+const Main = React.forwardRef((props, ref) => {
   return (
-    <div className="main">
+    <div className="main" ref={ref}>
       <img className="main__background" src={main_background} />
       <div className="main__text">
         <p className="main__text-par">Лимонад</p>
@@ -14,6 +14,6 @@ function Main() {
       </div>
     </div>
   )
-}
+})
 
 export default Main

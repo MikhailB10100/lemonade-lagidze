@@ -2,7 +2,7 @@ import React from 'react'
 import HistoryBlock from '@components/History/HistoryBlock'
 import { HistoryBlockProps } from '@components/History/interfaces'
 
-function History1() {
+const History1 = React.forwardRef((props, ref) => {
   const HISTORY_INFO: HistoryBlockProps[] = [
     {
       year: '1887',
@@ -18,7 +18,7 @@ function History1() {
     },
   ]
   return (
-    <div className="history__blocks">
+    <div className="history__blocks" ref={ref}>
       <h3 className="history__header">ИСТОРИЯ</h3>
       {HISTORY_INFO.map((item) => {
         const { year, text } = item
@@ -26,6 +26,6 @@ function History1() {
       })}
     </div>
   )
-}
+})
 
 export default History1

@@ -4,16 +4,29 @@ import { NavLink } from 'react-router-dom'
 import AdminService from '@api/admin-service'
 import logo from '@assets/logo.png'
 
-function Admin() {
+interface AdminProps {
+  setAuth: Function
+}
+
+function Admin({ setAuth }: AdminProps) {
   document.title = 'Admin'
 
   const [applications, setApplications] = useState([])
+
+  useEffect(() => {
+    AdminService.checkAuth()
+      .then((r) => {
+        if (r) setAuth(true)
+      })
+      .catch((e) => console.log(e))
+  }, [])
 
   async function logout() {
     try {
       const response = await AdminService.logout()
       if (response) {
         localStorage.removeItem('token')
+        setAuth(false)
       }
     } catch (e) {
       console.log(e.response?.data?.message)
