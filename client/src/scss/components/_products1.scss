@@ -1,9 +1,18 @@
 .products1 {
   font-family: Red Hat Text, sans-serif;
   width: 100%;
-  background-image: url('@assets/back_product_1.png');
-  background-repeat: no-repeat;
-  background-position: top;
+  background: rgba(196, 196, 196, 0.3);
+  height: 100vh;
+
+  &__items-block {
+    display: flex;
+  }
+
+  &__background {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
 
   h3 {
     font-size: 80px;
@@ -11,13 +20,19 @@
     text-align: center;
     padding-bottom: 40px;
     padding-top: 20px;
+    z-index: 20;
+    position: relative;
   }
 
   &__items-wrapper {
     width: 100%;
+    height: 100%;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    z-index: 20;
+    position: relative;
   }
 
   &__item {

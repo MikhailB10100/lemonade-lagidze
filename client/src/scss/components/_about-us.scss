@@ -1,0 +1,13 @@
+.about-us {
+  height: 100vh;
+  font-family: Red Hat Text, sans-serif;
+  background: rgba(196, 196, 196, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    font-family: Red Hat Text, sans-serif;
+    font-size: 96px;
+  }
+}

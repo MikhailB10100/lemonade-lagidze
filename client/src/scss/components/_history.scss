@@ -1,6 +1,21 @@
 .history {
-  &-block {
+  &__blocks {
     font-family: Red Hat Text, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__header {
+    font-size: 80px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
+  }
+
+  &-block {
     display: flex;
     margin-bottom: 35px;
     justify-content: center;
@@ -24,7 +39,6 @@
     &__text {
       display: flex;
       align-items: center;
-      justify-content: center;
       width: 62.5%;
       word-break: break-word;
       font-size: 20px;

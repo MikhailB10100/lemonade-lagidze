@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const drinks = () => (
+export const drinks = (
   <svg
     width="221"
     height="100"
@@ -63,7 +63,7 @@ export const drinks = () => (
   </svg>
 )
 
-export const conservants = () => (
+export const conservants = (
   <svg
     width="100"
     height="100"
@@ -98,7 +98,7 @@ export const conservants = () => (
   </svg>
 )
 
-export const factory = () => (
+export const factory = (
   <svg
     width="100"
     height="100"
@@ -130,7 +130,7 @@ export const factory = () => (
   </svg>
 )
 
-export const hands = () => (
+export const hands = (
   <svg
     width="100"
     height="100"
@@ -160,7 +160,7 @@ export const hands = () => (
   </svg>
 )
 
-export const nature = () => (
+export const nature = (
   <svg
     width="100"
     height="100"
@@ -206,7 +206,7 @@ export const nature = () => (
   </svg>
 )
 
-export const recipe = () => (
+export const recipe = (
   <svg
     width="100"
     height="107"
@@ -272,7 +272,7 @@ export const recipe = () => (
   </svg>
 )
 
-export const storages = () => (
+export const storages = (
   <svg
     width="100"
     height="100"
@@ -292,7 +292,7 @@ export const storages = () => (
   </svg>
 )
 
-export const time = () => (
+export const time = (
   <svg
     width="100"
     height="100"

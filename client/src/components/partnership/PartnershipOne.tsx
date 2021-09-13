@@ -1,4 +1,4 @@
-import React, { FormEventHandler, useState } from 'react'
+import React, { useState } from 'react'
 import InputBlock from '@components/partnership/InputBlock'
 import { InputBlockProps } from '@components/partnership/interfaces'
 import UserService from '@api/user-service'
