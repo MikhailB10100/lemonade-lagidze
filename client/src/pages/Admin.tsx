@@ -13,14 +13,6 @@ function Admin({ setAuth }: AdminProps) {
 
   const [applications, setApplications] = useState([])
 
-  useEffect(() => {
-    AdminService.checkAuth()
-      .then((r) => {
-        if (r) setAuth(true)
-      })
-      .catch((e) => console.log(e))
-  }, [])
-
   async function logout() {
     try {
       const response = await AdminService.logout()

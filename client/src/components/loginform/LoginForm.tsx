@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import AdminService from '@api/admin-service'
 
 interface LoginFormProps {
@@ -8,6 +8,14 @@ interface LoginFormProps {
 function LoginForm({ setAuth }: LoginFormProps) {
   const [username, setUsername] = useState<string>('')
   const [password, setPassword] = useState<string>('')
+
+  useEffect(() => {
+    AdminService.checkAuth()
+      .then((r) => {
+        if (r) setAuth(true)
+      })
+      .catch((e) => console.log(e))
+  }, [])
 
   const usernameHandler = (e) => setUsername(e.target.value)
   const passwordHandler = (e) => setPassword(e.target.value)
