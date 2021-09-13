@@ -16,7 +16,9 @@ const Products1 = React.forwardRef((props, ref) => {
   return (
     <div className="products1" ref={ref}>
       <img className="products1__background" src={back_product_1} />
-      <h3>ПРЕИМУЩЕСТВА</h3>
+      <div className='products1__h3-wrapper'>
+        <h3>ПРЕИМУЩЕСТВА</h3>
+      </div>
       <div className="products1__items-wrapper">
         <div className="products1__items-block">
           <div className="products1__item">

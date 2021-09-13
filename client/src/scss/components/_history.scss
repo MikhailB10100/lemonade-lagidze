@@ -1,47 +1,48 @@
-.history {
-  &__blocks {
-    font-family: Red Hat Text, sans-serif;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
+.history__wrapper {
+  margin-top: 50px;
+  padding: 0 100px 50px;
+}
 
-  &__header {
-    font-size: 80px;
-    font-weight: 400;
-    text-align: center;
-    padding-bottom: 40px;
-    padding-top: 20px;
-  }
+.history__header {
+  text-align: center;
+  font-family: Red Hat Text, sans-serif;
+  font-size: 80px;
+  padding-bottom: 20px;
+}
 
-  &-block {
-    display: flex;
-    margin-bottom: 35px;
-    justify-content: center;
+.history__content {
+  display: flex;
+  align-items: center;
+}
 
-    &__circle {
-      align-items: center;
-      background: black;
-      border-radius: 50%;
-      display: flex;
-      height: 208px;
-      justify-content: center;
-      width: 208px;
-      margin-right: 62px;
-    }
+.history__year {
+  min-width: 200px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: Red Hat Text, sans-serif;
+  font-size: 40px;
+  border-radius: 50%;
+}
 
-    &__year {
-      color: white;
-      font-size: 40px;
-    }
+.history__text {
+  margin-left: 40px;
+  font-size: 20px;
+  font-family: Red Hat Text, sans-serif;
+  line-height: 30px;
+}
 
-    &__text {
-      display: flex;
-      align-items: center;
-      width: 62.5%;
-      word-break: break-word;
-      font-size: 20px;
-    }
+.history__spacer {
+  width: 10%;
+  height: 50px;
+  position: relative;
+
+  img {
+    position: absolute;
+    right: 0;
   }
 }

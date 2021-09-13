@@ -14,15 +14,25 @@
     z-index: 1;
   }
 
-  h3 {
-    font-size: 80px;
-    font-weight: 400;
-    text-align: center;
-    padding-bottom: 40px;
-    padding-top: 20px;
-    z-index: 20;
-    position: relative;
+  &__h3-wrapper{
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+
+    h3 {
+      font-size: 80px;
+      font-weight: 400;
+      text-align: center;
+      padding-bottom: 40px;
+      padding-top: 20px;
+      z-index: 20;
+      position: relative;
+      width: 100%;
+      background-color: white;
+    }
   }
+
+
 
   &__items-wrapper {
     width: 100%;

@@ -3,7 +3,7 @@ import Logo from '../header/Logo'
 import Navigation from './Navigation'
 import Phone from '../../assets/Phone.svg'
 
-function Header({ refs }) {
+function Header({ refs }: any) {
   return (
     <header className="header">
       <Logo />

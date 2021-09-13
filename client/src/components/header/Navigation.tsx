@@ -1,7 +1,7 @@
 import React from 'react'
 import NavItem from '@components/header/NavItem'
 
-const Navigation = ({ refs }) => {
+const Navigation = ({ refs }: any) => {
   const { home, history, production, partnership, aboutUs } = refs
   return (
     <nav className="header__navigation">
