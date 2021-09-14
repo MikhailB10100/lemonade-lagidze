@@ -1,0 +1,25 @@
+.products2 {
+  font-family: Red Hat Text, sans-serif;
+  width: 100%;
+  background: rgba(196, 196, 196, 0.3);
+
+  &__first-page,
+  &__second-page {
+    height: 100vh;
+    position: relative;
+  }
+}
+
+.second-page__image {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.left-image {
+  left: 0;
+}
+
+.right-image {
+  right: 0;
+}

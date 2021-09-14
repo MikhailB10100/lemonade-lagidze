@@ -9,6 +9,7 @@ import History from '@components/newHistory/History'
 import AboutUs from '@components/aboutus/AboutUs'
 import PartnershipTwo from '@components/partnership/PartnershipTwo'
 import Footer from '@components/footer/footer'
+import Products2 from '@components/products2/Products2'
 
 function Home() {
   const home = useRef(null)
@@ -22,10 +23,11 @@ function Home() {
       <Header refs={refs} />
       <Main ref={home} />
       <Products1 ref={production} />
+      <Products2 />
       {/*<History1 ref={history} />*/}
       {/*<History2 />*/}
       {/*<History3 />*/}
-      <History />
+      <History ref={history} />
       <PartnershipOne ref={partnership} />
       <PartnershipTwo />
       <AboutUs ref={aboutUs} />
