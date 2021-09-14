@@ -1,5 +1,5 @@
 .partnership {
-  height: 100vh;
+  height: auto;
   font-family: Red Hat Text, sans-serif;
   background: rgba(196, 196, 196, 0.3);
   display: flex;
@@ -8,6 +8,7 @@
 
   &__text {
     font-size: 96px;
+    padding-top: 50px;
   }
 
   &__form {
@@ -21,7 +22,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 122px 0;
+    margin: 50px 0;
     &-one {
       font-size: 36px;
     }
@@ -41,7 +42,7 @@
     font-size: 18px;
     padding: 5px 10px;
     border: 1px solid transparent;
-    border-bottom: 5px solid #cc2936;
+    border-bottom: 5px solid #cc7b29;
     margin: 5px 0 50px;
     width: 500px;
     height: 60px;
@@ -55,7 +56,7 @@
   &__send-button {
     width: 360px;
     height: 50px;
-    background-color: #cc2936;
+    background-color: #cc7b29;
     color: white;
     font-size: 22px;
   }
