@@ -21,6 +21,7 @@ const History1 = () => {
   ]
   return (
     <>
+      <h3 className="history__header history__block">ИСТОРИЯ</h3>
       {HISTORY_INFO.map((item) => {
         return <HistoryBlock year={item.year} text={item.text} num={item.num} />
       })}

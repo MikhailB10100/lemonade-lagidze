@@ -7,7 +7,6 @@ import HistoryBlock from './HistoryBlock'
 const History = React.forwardRef((props, ref) => {
   return (
     <div className="history__wrapper" ref={ref}>
-      <h3 className="history__header">ИСТОРИЯ</h3>
       <History1 />
       <History2 />
       <History3 />

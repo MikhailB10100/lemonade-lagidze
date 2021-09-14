@@ -3,17 +3,61 @@
   width: 100%;
   background: rgba(196, 196, 196, 0.3);
 
-  &__first-page,
-  &__second-page {
+  &__first-page {
     height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__second-page {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    align-items: flex-start;
   }
 }
 
-.second-page__image {
-  position: absolute;
-  top: 0;
-  height: 100%;
+.second-page {
+  &__image {
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+
+  &__blocks {
+    padding-top: 100px;
+    display: flex;
+  }
+
+  &__lemonades {
+    background: url(~@assets/products2-lemonades.png);
+    margin-right: 25px;
+    opacity: 0.75;
+  }
+
+  &__syrups {
+    background: url(~@assets/products2-syrups.png);
+    margin-left: 25px;
+    opacity: 0.75;
+  }
+
+  &__block {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: white;
+    font-size: 36px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25vw;
+    height: 10vh;
+  }
 }
 
 .left-image {
@@ -22,4 +66,69 @@
 
 .right-image {
   right: 0;
+}
+
+.first-page {
+  &__image {
+    border-radius: 50%;
+    width: 96px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25%;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__header {
+    font-size: 80px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    width: 100%;
+    line-height: 30px;
+  }
+
+  &__block {
+    color: black;
+    font-size: 36px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50px;
+    background: white;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 30vw;
+    height: 10vh;
+  }
+
+  &__blocks {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__first-text-blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 36px;
+    height: 15%;
+  }
+
+  &__second-text-blocks {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 36px;
+  }
 }

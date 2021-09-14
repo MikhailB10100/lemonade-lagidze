@@ -2,7 +2,7 @@
   font-family: Red Hat Text, sans-serif;
   width: 100%;
   background: rgba(196, 196, 196, 0.3);
-  height: auto;
+  height: 100vh;
 
   &__items-block {
     display: flex;
@@ -14,7 +14,7 @@
     z-index: 1;
   }
 
-  &__h3-wrapper{
+  &__h3-wrapper {
     width: 100%;
     background-color: white;
     z-index: 10;
@@ -34,15 +34,13 @@
     }
   }
 
-
-
   &__items-wrapper {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     z-index: 20;
     position: relative;
   }

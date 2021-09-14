@@ -1,16 +1,12 @@
 import React from 'react'
-import products2Left from '@assets/products2-left.png'
-import products2Right from '@assets/products2-right.png'
-import { left } from '@components/products2/svgs'
+import Products2FirstPage from '@components/products2/Products2FirstPage'
+import Products2SecondPage from '@components/products2/Products2SecondPage'
 
 function Products2() {
   return (
     <div className="products2">
-      <div className="products2__first-page"></div>
-      <div className="products2__second-page">
-        <img className="second-page__image left-image" src={products2Left} />
-        <img className="second-page__image right-image" src={products2Right} />
-      </div>
+      <Products2FirstPage />
+      <Products2SecondPage />
     </div>
   )
 }
